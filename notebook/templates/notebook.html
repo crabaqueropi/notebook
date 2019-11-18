@@ -373,4 +373,34 @@ data-notebook-path="{{notebook_path | urlencode}}"
 
 <script src="{{ static_url("notebook/js/main.min.js") }}" type="text/javascript" charset="utf-8"></script>
 
+<!-- 
+//----------------------------------------
+// Begin Cristian modifications
+//---------------------------------------- 
+-->
+
+<!-- clickEvent file for to tracker clicks -->
+<script src="{{ static_url("ironhackstracker/tracker/clickEvent.js") }}" type="text/javascript" charset="utf-8"></script>
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first 
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-app.js"></script>
+
+ Add Firebase products that you want to use 
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.2.2/firebase-firestore.js"></script>
+
+<script src="{{ static_url("ironhackstracker/storage/firebase-app.js") }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ static_url("ironhackstracker/storage/firebase-auth.js") }}" type="text/javascript" charset="utf-8"></script>
+<script src="{{ static_url("ironhackstracker/storage/firebase-firestore.js") }}" type="text/javascript" charset="utf-8"></script>
+
+
+<script src="{{ static_url("ironhackstracker/storage/storage.js") }}" type="text/javascript" charset="utf-8"></script>
+-->
+
+<!-- 
+//----------------------------------------
+// End Cristian modifications
+//---------------------------------------- 
+-->
+
 {% endblock %}
