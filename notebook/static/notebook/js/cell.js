@@ -208,6 +208,13 @@ define([
         }
         if (this.code_mirror) {
             this.code_mirror.on('focus', function(cm, change) {
+                //----------------------------------------
+                // Begin Cristian modifications
+                //----------------------------------------
+                showInfoCellFocusing(that);
+                //----------------------------------------
+                // End Cristian modifications
+                //----------------------------------------
                 if (!that.selected) {
                     that.events.trigger('select.Cell', {'cell':that});
                 }

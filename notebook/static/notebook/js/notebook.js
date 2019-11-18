@@ -2452,6 +2452,13 @@ define([
         var cell;
         for (var i = 0; i < indices.length; i++) {
             cell = this.get_cell(indices[i]);
+            //----------------------------------------
+            // Begin Cristian modifications
+            //----------------------------------------
+            showInfoCellRunning(cell);
+            //----------------------------------------
+            // End Cristian modifications
+            //----------------------------------------
             cell.execute();
         }
 
@@ -2490,6 +2497,13 @@ define([
             cell_index = Math.max.apply(Math, indices);
         } else {
             var cell = this.get_selected_cell();
+            //----------------------------------------
+            // Begin Cristian modifications
+            //----------------------------------------
+            showInfoCellRunning(cell);
+            //----------------------------------------
+            // End Cristian modifications
+            //----------------------------------------
             cell_index = this.find_cell_index(cell);
             cell.execute();
         }
@@ -2523,6 +2537,13 @@ define([
             cell_index = Math.max.apply(Math, indices);
         } else {
             var cell = this.get_selected_cell();
+            //----------------------------------------
+            // Begin Cristian modifications
+            //----------------------------------------
+            showInfoCellRunning(cell);
+            //----------------------------------------
+            // End Cristian modifications
+            //----------------------------------------
             cell_index = this.find_cell_index(cell);
             cell.execute();
         }

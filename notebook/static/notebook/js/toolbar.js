@@ -98,6 +98,16 @@ define(['jquery','base/js/i18n'], function($, i18n) {
                     .append(
                         $("<i/>").addClass(el.icon||(action||{icon:'fa-exclamation-triangle'}).icon).addClass('fa')
                     );
+//----------------------------------------
+// Begin Cristian modifications
+//----------------------------------------
+                if(action_name){
+                  button.click(() => showEventClickButton(action_name));
+                }
+//----------------------------------------
+// End Cristian modifications
+//----------------------------------------
+
                 if (el.label) {
                     var label = $('<span/>').text(i18n.msg._(el.label)).addClass('toolbar-btn-label');
                     button.append(label);
